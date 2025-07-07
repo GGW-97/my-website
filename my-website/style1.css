@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Header and Nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.title {
+    font-size: 1.1rem;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #a51c1c;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Page container */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Project cards */
+.card {
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+/* Responsive */
+@media(min-width: 768px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .card-content {
+        flex: 1;
+    }
+}
+
+.video-title {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.video-stats {
+    font-family: Arial;
+    font-size: 14px;
+    color: gray;
+    margin-top: 0;
+}
+
+.shop-banner {
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    background-color: red;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.shop-banner:hover {
+    color: #007bff;
+    background-color: purple;
+}
